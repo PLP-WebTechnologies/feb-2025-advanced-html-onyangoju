@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore HTML5 Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #6c63ff;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #6c63ff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form input, form select, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background: #6c63ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to HTML5 Exploration</h1>
+        <p>Unleashing the power of modern web design!</p>
+    </header>
+
+    <!-- Ordered List Section -->
+    <section>
+        <h2>Top 3 Life Lessons</h2>
+        <ol type="I"> <!-- Ordered list with roman numerals -->
+            <li>Consistency beats talent.</li>
+            <li>Kindness costs nothing.</li>
+            <li>Learning never stops.</li>
+        </ol>
+    </section>
+
+    <!-- External Image Section -->
+    <section>
+        <h2>Picture of Inspiration</h2>
+        <img src="https://www.pexels.com/image-link-here.jpg" alt="Sunrise representing new beginnings" width="600">
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Key Contacts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alex Harper</td>
+                    <td>Hilltop Lane, Nairobi</td>
+                    <td>+254712345678</td>
+                    <td>alex.harper@sample.com</td>
+                </tr>
+                <tr>
+                    <td>Liya Omondi</td>
+                    <td>Lake View, Kisumu</td>
+                    <td>+254798765432</td>
+                    <td>liya.omondi@sample.com</td>
+                </tr>
+                <tr>
+                    <td>Kevin Wanyama</td>
+                    <td>Garden Estate, Eldoret</td>
+                    <td>+254701234567</td>
+                    <td>kevin.wanyama@sample.com</td>
+                </tr>
+                <tr>
+                    <td>Nadia Njeri</td>
+                    <td>Westlands, Nairobi</td>
+                    <td>+254711987654</td>
+                    <td>nadia.njeri@sample.com</td>
+                </tr>
+                <tr>
+                    <td>Brian Otieno</td>
+                    <td>Civic Center, Kisumu</td>
+                    <td>+254700123456</td>
+                    <td>brian.otieno@sample.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section>
+        <h2>Join Our Community</h2>
+        <form action="/submit" method="POST">
+            <!-- Name Field -->
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="What's your name?" required>
+            
+            <!-- Email Field -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Set a strong password" required minlength="8">
+            
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <!-- Dropdown -->
+            <label for="profession">Your Profession:</label>
+            <select id="profession" name="profession" required>
+                <option value="">Select your field</option>
+                <option value="developer">Software Developer</option>
+                <option value="designer">Graphic Designer</option>
+                <option value="manager">Project Manager</option>
+            </select>
+            
+            <!-- Radio Buttons -->
+            <label>Choose a Plan:</label>
+            <input type="radio" id="basic" name="plan" value="basic" required>
+            <label for="basic">Basic Plan</label>
+            <input type="radio" id="pro" name="plan" value="pro">
+            <label for="pro">Pro Plan</label>
+            
+            <!-- Checkboxes -->
+            <label>Select Interests:</label>
+            <input type="checkbox" id="technology" name="interests" value="technology">
+            <label for="technology">Technology</label>
+            <input type="checkbox" id="arts" name="interests" value="arts">
+            <label for="arts">Arts</label>
+            <input type="checkbox" id="fitness" name="interests" value="fitness">
+            <label for="fitness">Fitness</label>
+            
+            <!-- Submit Button -->
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section>
+        <h2>Immerse Yourself</h2>
+        <audio controls>
+            <source src="motivational-audio.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+        </audio>
+        
+        <video controls width="600">
+            <source src="inspirational-video.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+    </section>
+</body>
+</html>
