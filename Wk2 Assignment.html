@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore HTML5 Features</title>
+    <title>Pauline Onyango Wk2</title>
     <style>
+        .light-green {
+            color: lightgreen; /* or any specific light green color code */
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -51,6 +55,8 @@
             border-radius: 5px;
         }
         form button {
+            width: 50%; /* Updated width */
+            margin: 0 auto; /* Center the button */
             background: #6c63ff;
             color: #fff;
             border: none;
@@ -59,29 +65,38 @@
         form button:hover {
             background: #555;
         }
+        form input[type="radio"], form label {
+            display: inline-block;
+            margin-right: 10px; /* Adjust spacing as needed */
+        }
+        .radio-group {
+            margin-bottom: 20px; /* Space between plans and interests */
+        }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <h1>Welcome to HTML5 Exploration</h1>
-        <p>Unleashing the power of modern web design!</p>
+        <h1>PAULINE ONYANGO'S WEEK 2 ASSIGNMENT</h1>
+        <p>PLP FEB 2025 ADVANCED HTML!</p>
     </header>
 
     <!-- Ordered List Section -->
     <section>
-        <h2>Top 3 Life Lessons</h2>
+        <h2>HOBBIES AND INTERESTS</h2>
         <ol type="I"> <!-- Ordered list with roman numerals -->
-            <li>Consistency beats talent.</li>
-            <li>Kindness costs nothing.</li>
-            <li>Learning never stops.</li>
+            <li>Computing and IT</li>
+            <li>Writing books, poems & blog posts.</li>
+            <li>Positions of responsibility.</li>
         </ol>
     </section>
 
     <!-- External Image Section -->
     <section>
-        <h2>Picture of Inspiration</h2>
-        <img src="https://www.pexels.com/image-link-here.jpg" alt="Sunrise representing new beginnings" width="600">
+        <h2>Sample Code</h2>
+        <img src="https://images.pexels.com/photos/29459444/pexels-photo-29459444/free-photo-of-colorful-code-on-computer-screen-for-web-development.jpeg" alt="" height="600" width="600">
+        
+        <img src="https://media.istockphoto.com/id/1398473177/photo/questionnaire-with-checkboxes-filling-survey-form-online-answer-questions.jpg?b=1&s=612x612&w=0&k=20&c=JyS0nDeuJaIQI6JjpgwuyC9lEiV43n0o6jopLqu0kKw=" alt="" height="600" width="600">
     </section>
 
     <!-- Table Section -->
@@ -98,34 +113,34 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Alex Harper</td>
+                    <td>Precious Mokaya</td>
                     <td>Hilltop Lane, Nairobi</td>
                     <td>+254712345678</td>
-                    <td>alex.harper@sample.com</td>
+                    <td>mokayaprecious2003@gmail.com</td>
                 </tr>
                 <tr>
                     <td>Liya Omondi</td>
                     <td>Lake View, Kisumu</td>
                     <td>+254798765432</td>
-                    <td>liya.omondi@sample.com</td>
+                    <td>omondiliya@gmail.com</td>
                 </tr>
                 <tr>
                     <td>Kevin Wanyama</td>
                     <td>Garden Estate, Eldoret</td>
                     <td>+254701234567</td>
-                    <td>kevin.wanyama@sample.com</td>
+                    <td>kevinwanyama76@gmail.com</td>
                 </tr>
                 <tr>
-                    <td>Nadia Njeri</td>
-                    <td>Westlands, Nairobi</td>
+                    <td>Cindy Mugambi</td>
+                    <td>Keveye, Kakamega</td>
                     <td>+254711987654</td>
-                    <td>nadia.njeri@sample.com</td>
+                    <td>cindymichelle@gmail.com</td>
                 </tr>
                 <tr>
-                    <td>Brian Otieno</td>
-                    <td>Civic Center, Kisumu</td>
+                    <td>Redix Rodgers</td>
+                    <td>Atella Resort, Kisumu</td>
                     <td>+254700123456</td>
-                    <td>brian.otieno@sample.com</td>
+                    <td>rodgers0798@gmail.com</td>
                 </tr>
             </tbody>
         </table>
@@ -161,20 +176,23 @@
             </select>
             
             <!-- Radio Buttons -->
-            <label>Choose a Plan:</label>
-            <input type="radio" id="basic" name="plan" value="basic" required>
-            <label for="basic">Basic Plan</label>
-            <input type="radio" id="pro" name="plan" value="pro">
-            <label for="pro">Pro Plan</label>
-            
+            <div class="radio-group">
+                <label class="light-green"><strong>Choose a Plan:</strong></label>
+                <input type="radio" id="basic" name="plan" value="basic" required>
+                <label for="basic">Basic</label>
+                <input type="radio" id="Standard" name="plan" value="Standard" required>
+                <label for="Standard">Standard</label>
+                <input type="radio" id="pro" name="plan" value="pro" required>
+                <label for="pro">Premium</label>
+            </div>
             <!-- Checkboxes -->
-            <label>Select Interests:</label>
+            <label class="light-green"><strong>Select Interests:</strong></label>
             <input type="checkbox" id="technology" name="interests" value="technology">
-            <label for="technology">Technology</label>
+            <label for="technology" class="black">Technology</label>
             <input type="checkbox" id="arts" name="interests" value="arts">
-            <label for="arts">Arts</label>
+            <label for="arts" class="black">Arts</label>
             <input type="checkbox" id="fitness" name="interests" value="fitness">
-            <label for="fitness">Fitness</label>
+            <label for="fitness" class="black">Fitness</label>
             
             <!-- Submit Button -->
             <button type="submit">Sign Up</button>
@@ -183,16 +201,12 @@
 
     <!-- Multimedia Section -->
     <section>
-        <h2>Immerse Yourself</h2>
+        <h2>Symphony Library</h2>
         <audio controls>
-            <source src="motivational-audio.mp3" type="audio/mpeg">
-            Your browser does not support audio playback.
+            <iframe src="https://audiomack.com/embed/sos-99/song/the-truth-how-i-met-my-ex-cover" scrolling="no" width="100%" height="252" frameborder="0" title="The Truth (How I met my ex Cover)"></iframe>
         </audio>
         
-        <video controls width="600">
-            <source src="inspirational-video.mp4" type="video/mp4">
-            Your browser does not support video playback.
-        </video>
+        <iframe width="600" height="400" src="https://www.youtube.com/embed/yo3c_mgqlrw" frameborder="0" allowfullscreen></iframe>
     </section>
 </body>
 </html>
